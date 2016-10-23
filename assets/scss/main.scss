@@ -90,7 +90,35 @@ picture {
 }
 
 header {
-  background-color: $gray-light;
+  position: relative;
+
+  border-top: 5px solid $violet;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    height: 30px;
+
+    background-color: $gray;
+
+    @extend .dblock;
+  }
+  a {
+    text-decoration: none;
+
+    color: $violet;
+  }
+  .header-top--phone,
+  .header-top--mail,
+  .header-top--security {
+    font-size: 15px;
+
+    padding-top: 7px;
+
+    color: $blue;
+  }
   .logo {
     display: block;
     img {
