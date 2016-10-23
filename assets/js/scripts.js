@@ -65,5 +65,14 @@ jQuery(document).ready(function($) {
     }
   });
   $elements.height(maxheight);
-
+}());
+(function() {
+  var $elements = $('.footer--first');
+  var maxheight = 0;
+  $elements.each(function() {
+    if ($(this).height() > maxheight) {
+      maxheight = $(this).height();
+    }
+  });
+  $elements.height(maxheight);
 }());

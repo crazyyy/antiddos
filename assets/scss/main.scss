@@ -495,8 +495,94 @@ article {
 footer {
   height: $footer;
   margin: $footer_margin auto 0;
+  padding-top: 60px;
 
-  background-color: $gray-light;
+  background-color: $violet;
+  .footer--first {
+    padding-left: 60px;
+    margin-bottom: 10px;
+    a {
+      display: block;
+
+      text-decoration: none;
+    }
+  }
+  .footer--adress,
+  .footer--phone,
+  .footer--mail {
+    position: relative;
+
+    padding-top: 10px;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 38px;
+      height: 60px;
+
+      background-repeat: no-repeat;
+
+      @extend .dblock;
+    }
+    p,
+    a {
+      margin-bottom: 6px;
+
+      color: #fff;
+    }
+    a {
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  .footer--adress {
+    &:before {
+      background-image: url(../img/svg/ico-map.svg);
+    }
+  }
+  .footer--phone {
+    &:before {
+      background-image: url(../img/svg/ico-phone.svg);
+    }
+  }
+  .footer--mail {
+    &:before {
+      background-image: url(../img/svg/ico-write.svg);
+    }
+  }
+  .footer--social {
+    padding-left: 15px;
+
+    @extend .justify-child;
+    a {
+      font-size: 30px;
+
+      display: inline-block;
+
+      width: 60px;
+      height: 60px;
+
+      text-align: center;
+
+      color: $blue;
+      border: 2px solid $blue;
+      border-radius: 50%;
+      .fa {
+        line-height: 1.9;
+      }
+      &:hover {
+        border-color: darken($action-color, 15%);
+        .fa {
+          color: darken($action-color, 15%);
+        }
+      }
+    }
+  }
+  .footer--second {
+    margin-bottom: 25px;
+  }
 }
 
 @import 'fonts/font_fontawesome';
