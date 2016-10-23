@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<svg width="165.99" height="165.99" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <style>circle,
+      path {
+        stroke: #40b9eb;
+        fill: transparent;
+        stroke-width: 2px;
+      }</style>
+ </defs>
+ <title>VPS</title>
+ <g>
+  <title>Layer 1</title>
+  <g id="Layer_2">
+   <g id="Layer_1-2">
+    <circle id="svg_1" r="82" cy="83.065085" cx="83.008771" class="cls-1"/>
+    <path fill="black" id="svg_2" d="m131.943686,101.15017l-98,0l0,24l98,0l0,-24z" class="cls-2"/>
+    <circle id="svg_3" r="4" cy="113.065085" cx="49.008771" class="cls-3"/>
+    <path fill="black" id="svg_4" d="m132.018771,70.075085l-98,0l0,24l98,0l0,-24z" class="cls-2"/>
+    <circle id="svg_5" r="4" cy="82.065085" cx="49.008771" class="cls-3"/>
+    <circle id="svg_7" r="4" cy="52.065085" cx="49.008771" class="cls-3"/>
+    <path id="svg_8" fill="black" d="m132.018771,40.174694l-98,0l0,24l98,0l0,-24z" class="cls-2"/>
+   </g>
+  </g>
+ </g>
+</svg>

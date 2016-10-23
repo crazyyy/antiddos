@@ -15,7 +15,7 @@
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
-  font-weight: $fnorm;
+  font-weight: $flight;
   line-height: $base-line-height;
 
   min-width: 320px;
@@ -88,11 +88,32 @@ picture {
 
   max-width: $width;
 }
-
+.btn {
+  border-radius: 0;
+  &.btn-orange {
+    background-color: $orange;
+  }
+  &:hover {
+    box-shadow: $base-box-shadow;
+    &.btn-orange {
+      background-color: darken($orange, 10%);
+    }
+  }
+}
 header {
   position: relative;
 
+  height: 165px;
+
   border-top: 5px solid $violet;
+  .container {
+    .row {
+      height: 140px;
+      margin-bottom: 25px;
+
+      border-bottom: 1px solid $blue;
+    }
+  }
   &:before {
     position: absolute;
     top: 0;
@@ -118,11 +139,83 @@ header {
     padding-top: 7px;
 
     color: $blue;
+    a {
+      font-weight: 600;
+
+      text-decoration: none;
+    }
+  }
+  .header-top--security {
+    position: relative;
+
+    padding-top: 0;
+
+    @extend .clearfix;
+    .stand-link {
+      line-height: 2;
+
+      display: block;
+
+      height: 30px;
+      padding-right: 15px;
+
+      text-align: center;
+
+      color: #fff;
+      background-color: $orange;
+      span {
+        border-bottom: 1px dotted transparent;
+      }
+      &:hover {
+        text-decoration: none;
+        span {
+          border-color: #fff;
+        }
+      }
+    }
+    .change-lang {
+      font-size: 18px;
+      font-weight: normal;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      overflow: hidden;
+
+      width: 35px;
+      height: 30px;
+
+      text-align: center;
+
+      border-left: 1px solid #fff;
+      background-color: $violet;
+      li {
+        line-height: 1.5;
+
+        display: block;
+
+        height: 30px;
+
+        color: #fff;
+      }
+    }
   }
   .logo {
-    display: block;
+    padding-top: 16px;
     img {
       max-width: 100%;
+    }
+  }
+  .headnav {
+    font-size: 16px;
+
+    width: 100%;
+    padding-top: 65px;
+
+    @extend .justify-child;
+    a {
+      text-decoration: none;
     }
   }
 }
@@ -133,9 +226,6 @@ nav {
     li {
       display: inline-block;
     }
-  }
-  .headnav {
-    font-size: 100%;
   }
 }
 
@@ -148,7 +238,259 @@ article {
 .looper {
   @extend .clearfix;
 }
+.tab-choise {
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
 
+    height: 380px;
+
+    background-image: url(../img/bg/tab-choise-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @extend .dblock;
+  }
+  .tab-choise--title {
+    font-size: 36px;
+
+    margin-bottom: 25px;
+    padding-top: 40px;
+
+    text-align: center;
+
+    color: #fff;
+  }
+  .tab-choise--grid {
+    height: 272px;
+
+    @extend .clearfix;
+    .tab-choise--button {
+      position: relative;
+
+      display: block;
+      float: left;
+
+      width: 20%;
+      height: 100%;
+
+      cursor: pointer;
+      text-align: center;
+
+      color: #fff;
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+
+        margin-left: -30px;
+
+        transition: all .5s;
+
+        opacity: 0;
+
+        @extend .dblock;
+        @include triangle(60px 30px, #fff, up);
+      }
+      h3 {
+        font-size: 21px;
+
+        padding: 15px 15px 0;
+
+        transition: all .5s;
+        text-align: center;
+
+        color: $blue;
+      }
+      path,
+      circle {
+        transition: all .5s;
+
+        stroke: $blue;
+        fill: transparent;
+        stroke-width: 2px;
+      }
+      &:hover {
+        path,
+        circle {
+          stroke: #fff;
+        }
+        h3 {
+          color: #fff;
+        }
+      }
+      &.tab-choise--button-active {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .tab-choise--container {
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+
+      margin-bottom: 40px;
+      padding-top: 35px;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      color: $violet;
+      span {
+        padding-bottom: 15px;
+
+        border-bottom: 1px solid $blue;
+      }
+    }
+    .tab-choise--description {
+      height: 125px;
+      p {
+        font-size: 13px;
+
+        margin-bottom: 0;
+        padding-right: 15%;
+        padding-left: 15%;
+
+        text-align: center;
+
+        color: $gray-dark;
+      }
+    }
+    table {
+      font-size: 16px;
+
+      width: 100%;
+      .fa-minus-circle {
+        color: $violet;
+      }
+      .fa-plus-circle {
+        color: $orange;
+      }
+      tr {
+        &:nth-child(odd) {
+          background-color: $gray-light;
+        }
+        th {
+          color: #fff;
+          background-color: $violet;
+        }
+        td,
+        th {
+          width: 16%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          text-align: center;
+
+          border: 1px solid #fff;
+          &:first-child {
+            width: 52%;
+          }
+        }
+        &:last-child {
+          background-color: $violet;
+          td {
+            padding: 0;
+          }
+        }
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+.double-tarifs {
+  padding-top: 35px;
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+
+    margin-bottom: 55px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $violet;
+    span {
+      border-bottom: 1px solid $blue;
+    }
+  }
+  .double-tarifs--item {
+    font-size: 13px;
+
+    position: relative;
+
+    padding-right: 45px;
+    padding-bottom: 90px;
+    padding-left: 45px;
+    h4 {
+      font-size: 24px;
+      font-weight: 600;
+
+      margin-bottom: 25px;
+
+      text-transform: uppercase;
+
+      color: $violet;
+      span {
+        padding-right: 15px;
+
+        text-align: left;
+
+        border-bottom: 1px solid $blue;
+      }
+    }
+    p {
+      line-height: 1.6;
+
+      margin-bottom: 30px;
+    }
+    ul {
+      li {
+        line-height: 1.6;
+
+        position: relative;
+
+        margin-bottom: 10px;
+        &:before {
+          position: absolute;
+          top: 3px;
+          left: -20px;
+
+          content: '\f00c';
+
+          color: $violet;
+
+          @extend .fa;
+        }
+      }
+    }
+    table {
+      width: 70%;
+      margin-bottom: 15px;
+      td {
+        border: 0;
+      }
+    }
+    .btn {
+      font-size: 16px;
+
+      position: absolute;
+      bottom: 35px;
+      left: 50%;
+
+      width: 160px;
+      margin-left: -80px;
+    }
+  }
+}
 
 footer {
   height: $footer;
@@ -156,7 +498,6 @@ footer {
 
   background-color: $gray-light;
 }
-
 
 @import 'fonts/font_fontawesome';
 @import 'fonts/font_proxima';
