@@ -2,7 +2,7 @@
   </section><!-- /section -->
 </div><!-- /wrapper -->
 
-<footer role="contentinfo">
+<footer id="contacts" role="contentinfo">
   <div class="container">
     <div class="row">
 
