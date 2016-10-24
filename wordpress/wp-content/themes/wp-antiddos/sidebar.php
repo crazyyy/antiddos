@@ -1,4 +1,4 @@
-<aside class="sidebar" role="complementary">
+<aside class="col-md-4 sidebar" role="complementary">
 
   <?php if ( is_active_sidebar('widgetarea1') ) : ?>
     <?php dynamic_sidebar( 'widgetarea1' ); ?>

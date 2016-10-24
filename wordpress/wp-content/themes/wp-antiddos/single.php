@@ -1,37 +1,37 @@
 <?php get_header(); ?>
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <div class="container">
+    <div class="row">
 
-      <h1 class="single-title inner-title"><?php the_title(); ?></h1>
-      <?php if ( has_post_thumbnail()) :?>
-        <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-          <?php the_post_thumbnail(); // Fullsize image for the single post ?>
-        </a>
-      <?php endif; ?><!-- /post thumbnail -->
+      <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-      <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
-      <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
-      <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span><!-- /post details -->
+        <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-8'); ?>>
 
-      <?php the_content(); ?>
+          <h1 class="single-title inner-title"><?php the_title(); ?></h1>
+          <?php the_content(); ?>
 
-      <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+          <span class="post-details">
+            <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?> |</span> <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
+          </span><!-- post-details -->
 
-      <p><?php _e( 'Categorised in: ', 'wpeasy' ); the_category(', '); // Separated by commas ?></p>
+          <span class="post-tags">
+            <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); ?>
+          </span>
 
-      <p><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></p>
+          <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
 
-      <?php edit_post_link(); ?>
+          <?php edit_post_link(); ?>
 
-      <?php comments_template(); ?>
+        </article>
 
-    </article>
-  <?php endwhile; else: ?>
-    <article>
+      <?php endwhile; else: ?>
+        <article class="col-md-8">
+          <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+        </article>
+      <?php endif; ?>
 
-      <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+      <?php get_sidebar(); ?>
 
-    </article>
-  <?php endif; ?>
-<?php get_sidebar(); ?>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+
 <?php get_footer(); ?>
