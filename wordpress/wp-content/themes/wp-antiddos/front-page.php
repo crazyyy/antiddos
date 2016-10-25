@@ -1,209 +1,177 @@
 <?php /* Template Name: Home Page */ get_header(); ?>
 
-    <div class="tab-choise">
-      <div class="container">
+  <div class="tab-choise tab-choise--home">
+    <div class="container">
+      <div class="row">
+        <h4 class="col-md-12 tab-choise--title">мы предоставляем 100% защиту от DDOS атак для:</h4>
+        <?php get_template_part('inc/tab-choise--grid'); ?>
+        <a href="#" class="btn btn-transblue">больше услуг</a>
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- /.tab-choise tab-choise--home-->
+
+  <div class="about-company">
+    <div class="container">
+      <div class="row">
+        <h4 class="front-block-title"><span>О компании</span></h4>
+        <p class="front-block-descr">Более чем 10-ти летний опыт в защите информации, дает нам возможность не только успешно защищать ваш бизнес, но и прогнозировать векторы будущих атак и принимать превентивные меры.</p>
         <div class="row">
-          <h4 class="col-md-12 tab-choise--title">мне нужна защита для:</h4>
-          <div class="col-md-12 tab-choise--grid">
-            <div class="col-md-2 tab-choise--button tab-choise--button-active" data-type="site">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/svg/ico-site.svg" alt="">
-              <h3>интернет сайта</h3>
-            </div>
-            <div class="col-md-2 tab-choise--button" data-type="vps">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/svg/ico-vps.svg" alt="">
-              <h3>выделенного сервера</h3>
-            </div>
-            <div class="col-md-2 tab-choise--button" data-type="game">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/svg/ico-game.svg" alt="">
-              <h3>игрового сервера</h3>
-            </div>
-            <div class="col-md-2 tab-choise--button" data-type="remote">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/svg/ico-remote.svg" alt="">
-              <h3>удаленного сервера</h3>
-            </div>
-            <div class="col-md-2 tab-choise--button" data-type="highload">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/svg/ico-highload.svg" alt="">
-              <h3>high-load проекта</h3>
-            </div>
-          </div><!-- /.col-md-12 tab-choise--grid -->
-
-
-          <div class="col-md-12 tab-choise--container tab-choise--active tab-choise--type-site" >
-            <h2><span>DDoS защищенный хостинг для интернет сайтов</span></h2>
-            <div class="tab-choise--description">
-              <p>Данная услуга строится на базе DDoS защещенных серверов конфигурации Dedicated 3.</p>
-              <p>Тарифные планы отличаются только объемом ресурсов выделенных для сайта. Защита реализована на базе магистральных DDoS фильтров и Web Applications Firewall собственной разработки.</p>
-              <p>Если вы постоянно подвергаетесь ддос атакам, но ваш проект малобюджетный для покупки сервера с защитой от DDoS, хотсинг для вас наилучший выбор.</p>
-            </div><!-- /.tab-choise--description -->
-            <table>
-              <tr>
-                <th></th>
-                <th>Hosting 1</th>
-                <th>Hosting 2</th>
-                <th>Hosting 3</th>
-              </tr>
-              <tr>
-                <td>Дисковое пространство</td>
-                <td>1,5 Gb</td>
-                <td>2,5 Gb</td>
-                <td>4 Gb</td>
-              </tr>
-              <tr>
-                <td>Выделенный IP-адрес</td>
-                <td><i class="fa fa-minus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-              </tr>
-              <tr>
-                <td>WAF ( web applications firewall )</td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-              </tr>
-              <tr>
-                <td>Фильтрация HTTPS траффика</td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-              </tr>
-              <tr>
-                <td>Домены</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>Поддомены</td>
-                <td>2</td>
-                <td>5</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>MySQL базы данных</td>
-                <td>1</td>
-                <td>2</td>
-                <td>5</td>
-              </tr>
-              <tr>
-                <td>Версии PHP на ваш выбор ( 5.2, 5.3, 5.4 )</td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-              </tr>
-              <tr>
-                <td>Бекап баз данных каждые три часа</td>
-                <td><i class="fa fa-minus-circle" aria-hidden="true"></i></td>
-                <td>по запросу</td>
-                <td>по запросу</td>
-              </tr>
-              <tr>
-                <td>Бекап файлов раз в сутки</td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-              </tr>
-              <tr>
-                <td>Поддержка по email</td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-              </tr>
-              <tr>
-                <td>Телефонная поддержка в режиме 24/7</td>
-                <td><i class="fa fa-minus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-minus-circle" aria-hidden="true"></i></td>
-                <td><i class="fa fa-plus-circle" aria-hidden="true"></i></td>
-              </tr>
-              <tr>
-                <td>Стоимость</td>
-                <td>75$</td>
-                <td>150$</td>
-                <td>150$</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td><button class="btn btn-orange tab-choise--buy" data-num="1">купить</button></td>
-                <td><button class="btn btn-orange tab-choise--buy" data-num="2">купить</button></td>
-                <td><button class="btn btn-orange tab-choise--buy" data-num="3">купить</button></td>
-              </tr>
-            </table>
-          </div><!-- /.col-md-12 tab-choise--container -->
-
-        </div><!-- row -->
-      </div><!-- container -->
-    </div><!-- /.tab-choise -->
-
-    <div class="double-tarifs">
-      <div class="container">
-        <div class="row">
-          <h3 class="col-md-12"><span>DDoS защита и поддержка High-Load проектов</span></h3>
-
-          <div class="col-md-6 double-tarifs--item">
-            <h4><span>Пакет CLUSTER</span></h4>
-            <p>Разработка и техническая поддержка сложных систем балансировки нагрузки между группой серверов.</p>
-            <ul>
-              <li>Анализ работы существующего проекта заказчика и проектирование схемы распределения и взаимодействия данных.</li>
-              <li>Выбор оптимальной апппаратной платформы и ISP.</li>
-              <li>Установка и настройка всего необходимого ПО для High Load проекта.</li>
-              <li>Построение системы балансировки нагрузки между 2 и более серверами</li>
-              <li>Работы с программистами заказчика по оптимизации CMS проекта.</li>
-              <li>Мониторинг основных параметров работы сервера (CPU, RAM, LOAD, NETWORK, HDD)</li>
-              <li>Решение любых проблемных ситуаций связанных с работоспособностью сервера 24\7</li>
-              <li>Резервное копирование на внешний сервер и восстановление информации</li>
-            </ul>
-            <table>
-              <tr>
-                <td>2 Сервера</td>
-                <td>300$ в месяц</td>
-              </tr>
-              <tr>
-                <td>3 Сервера</td>
-                <td>400$ в месяц</td>
-              </tr>
-              <tr>
-                <td>5 Серверов</td>
-                <td>550$ в месяц</td>
-              </tr>
-            </table>
-            <p>В стоимость включены только услуги технической поддержки</p>
-            <button class="btn btn-orange">купить</button>
-          </div><!-- /.col-md-6 -->
-
-          <div class="col-md-6 double-tarifs--item">
-            <h4><span>Пакет Full Responsibility </span></h4>
-            <p>Разработка и техническая поддержка сложных HighLoad решений для крупных интернет проектов</p>
-            <ul>
-              <li>Совместно с техническим персоналом заказчика выбор технологий и языков программирования для разработки проекта.</li>
-              <li>Проектирование схемы взаимодействия данных</li>
-              <li>Проектирование СУБД</li>
-              <li>Построение аппаратной инфраструктуры  ( выбор серверов, выбор ISP, инсталяция ОС и ПО )</li>
-              <li>Настройка системы балансировки нагрузки и синхронизации данных.</li>
-              <li>Анализ работы сайта на рабочей нагрузке и внесение необходимых изменений в структуру работы приложения.</li>
-              <li>Документирование рабочей схемы</li>
-              <li>Мониторинг основных параметров работы сервера (CPU, RAM, LOAD, NETWORK, HDD)</li>
-              <li>Решение любых проблемных ситуаций связанных с работоспособностью сервера 24\7</li>
-              <li>Резервное копирование  и восстановление информации</li>
-              <li>Общение с техническим персоналом ISP по всем проблемным вопросам.</li>
-            </ul>
-            <table>
-              <tr>
-                <td>5 Серверов</td>
-                <td>750$ в месяц</td>
-              </tr>
-              <tr>
-                <td>10 Серверов</td>
-                <td>1400$ в месяц</td>
-              </tr>
-              <tr>
-                <td>Более 10</td>
-                <td><a href="#">свяжитесь с менеджером</a></td>
-              </tr>
-            </table>
-            <p>В стоимость включены только услуги технической поддержки</p>
-            <button class="btn btn-orange">купить</button>
-          </div><!-- /.col-md-6 -->
-
+          <div class="about-company--item col-md-3">
+            <h6><?php $now = time(); $your_date = strtotime("2005-10-15"); $datediff = $now - $your_date; echo floor($datediff / (60 * 60 * 24)); ?> дней</h6>
+            <p>непрерывной защиты</p>
+          </div><!-- /.about-company--item col-md-3 -->
+          <div class="about-company--item col-md-3">
+            <h6>2000 Gbs</h6>
+            <p>емкость внешних каналов</p>
+          </div><!-- /.about-company--item col-md-3 -->
+          <div class="about-company--item col-md-3">
+            <h6>10 Млн PPS</h6>
+            <p>расчетная мошность DDoS фильтров</p>
+          </div><!-- /.about-company--item col-md-3 -->
+          <div class="about-company--item col-md-3">
+            <h6>1500 U</h6>
+            <p>вместимость Дата Центра</p>
+          </div><!-- /.about-company--item col-md-3 -->
         </div><!-- /.row -->
-      </div><!-- /.container -->
-    </div><!-- /.double-tarifs -->
+        <p class="front-block-descr front-block-descr--bdt">Работая с нами, вы получаете бесплатную техническую поддержку для администрироавния ваших сайтов и серверов. Забудте о написании скриптов и проблемах с резервным копированием. <br>Мы решим это за вас - занимайтесь спокойно Вашим бизнесом!</p>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.about-company -->
+
+  <div class="our-tech">
+    <div class="container">
+      <div class="row">
+        <h4 class="front-block-title col-md-12"><span>наши технологии</span></h4>
+
+        <div class="our-tech--container col-md-12">
+
+          <?php $count = count( get_field('oure_tech') ); $width = 100 / $count;
+            if( have_rows('oure_tech') ): while ( have_rows('oure_tech') ) : the_row(); ?>
+          <div class="our-tech--item" style="width: <?php echo $width ?>%">
+            <?php $image = get_sub_field('image'); if( !empty($image) ): ?>
+              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+            <?php endif; ?>
+          </div><!-- /.our-tech--item -->
+          <?php endwhile; endif; ?>
+
+        </div><!-- /.our-tech--container -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.our-tech -->
+
+  <div class="our-advantages">
+    <div class="container">
+      <div class="row">
+
+        <h4 class="front-block-title col-md-12"><span>наши приемущества</span></h4>
+
+        <div class="row our-advantages--container">
+
+          <?php if( have_rows('our-advantages') ): while ( have_rows('our-advantages') ) : the_row(); ?>
+          <div class="our-advantages--item col-md-6">
+            <span class="our-advantages--image">
+              <?php $image = get_sub_field('image'); if( !empty($image) ): ?>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+              <?php endif; ?>
+            </span>
+            <span class="our-advantages--descr">
+              <?php the_sub_field('description'); ?>
+            </span>
+          </div><!-- /.our-advantages--item -->
+          <?php endwhile; endif; ?>
+
+        </div><!-- /.row our-advantages--container -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.our-advantages -->
+
+  <div class="choise-deftype">
+    <div class="container">
+      <div class="row">
+
+        <h4 class="front-block-title"><span>ВЫБОР ТИПА ЗАЩИТЫ</span></h4>
+        <p class="front-block-descr">выберите в каждой строке значение, максимально соответствующее вашему проекту</p>
+
+        <table class="table-calc">
+          <tr class="type-type">
+            <td>тип проекта :</td>
+            <td><button class="btn btn-blue btn-table-calc btn-table-active">сайт визитка</button></td>
+            <td><button class="btn btn-blue btn-table-calc">магазин</button></td>
+            <td><button class="btn btn-blue btn-table-calc">форум</button></td>
+            <td><button class="btn btn-blue btn-table-calc">HYIP</button></td>
+            <td><button class="btn btn-blue btn-table-calc">игровой сервер</button></td>
+            <td><button class="btn btn-blue btn-table-calc">портал</button></td>
+          </tr>
+          <tr class="type-visit">
+            <td>посещений в сутки :</td>
+            <td><button class="btn btn-blue btn-table-calc">до 1000</button></td>
+            <td><button class="btn btn-blue btn-table-calc btn-table-active">до 2000</button></td>
+            <td><button class="btn btn-blue btn-table-calc">до 10000</button></td>
+            <td><button class="btn btn-blue btn-table-calc">до 15000</button></td>
+            <td><button class="btn btn-blue btn-table-calc">до 20000</button></td>
+            <td><button class="btn btn-blue btn-table-calc">более 20000</button></td>
+          </tr>
+          <tr class="type-traf">
+            <td>трафик в месяц :</td>
+            <td><button class="btn btn-blue btn-table-calc">до 10 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc">до 50 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc btn-table-active">до 100 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc">до 500 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc">более 500 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc">не знаю</button></td>
+          </tr>
+          <tr class="type-size">
+            <td>размер проекта :</td>
+            <td><button class="btn btn-blue btn-table-calc">до 100 Мб</button></td>
+            <td><button class="btn btn-blue btn-table-calc">до 1 Гб</button></td>
+            <td><button class="btn btn-blue btn-transwhite btn-table-calc">до 5 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc btn-table-active">до 10 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc">до 50 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc">более 50 Гб </button></td>
+          </tr>
+          <tr class="type-serv">
+            <td>тип хостинга :</td>
+            <td><button class="btn btn-blue btn-table-calc">выделенный сервер</button></td>
+            <td><button class="btn btn-blue btn-table-calc">виртуальный сервер</button></td>
+            <td><button class="btn btn-blue btn-table-calc">хостинг</button></td>
+            <td><button class="btn btn-blue btn-table-calc">удаленная защита</button></td>
+            <td><button class="btn btn-blue btn-table-calc">кластер</button></td>
+            <td><button class="btn btn-blue btn-table-calc btn-table-active">не знаю</button></td>
+          </tr>
+        </table><!-- /.table-calc -->
+
+        <div class="calc-result">
+          <h5>Рекомендуемый пакет: <span>VPS Light II</span></h5>
+          <a href="#" class="btn btn-transblue">подробнее о пакете</a>
+        </div><!-- /.calc-result -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.choise-deftype -->
+
+  <div class="choise-pay">
+    <div class="container">
+      <div class="row">
+
+        <h4 class="front-block-title"><span>варианты оплаты</span></h4>
+
+        <div class="choise-pay--container">
+
+          <?php $count = count( get_field('payment') ); $width = 100 / $count;
+            if( have_rows('payment') ): while ( have_rows('payment') ) : the_row(); ?>
+          <div class="choise-pay--item" style="width: <?php echo $width ?>%">
+            <?php $image = get_sub_field('image'); if( !empty($image) ): ?>
+              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+            <?php endif; ?>
+          </div><!-- /.choise-pay--item -->
+          <?php endwhile; endif; ?>
+
+        </div><!-- /.choise-pay--container -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.choise-pay -->
+
 <?php get_footer(); ?>

@@ -76,3 +76,33 @@ jQuery(document).ready(function($) {
   });
   $elements.height(maxheight);
 }());
+(function() {
+  var $elements = $('.our-tech--item');
+  var maxheight = 0;
+  $elements.each(function() {
+    if ($(this).height() > maxheight) {
+      maxheight = $(this).height();
+    }
+  });
+  $elements.height(maxheight);
+}());
+(function() {
+  var $elements = $('.choise-pay--item');
+  var maxheight = 0;
+  $elements.each(function() {
+    if ($(this).height() > maxheight) {
+      maxheight = $(this).height();
+    }
+  });
+  $elements.height(maxheight);
+}());
+$(document).ready(function() {
+  $('.table-calc button').on('click', function(e){
+
+    var $parentTr = $(this).parent('td').parent('tr');
+    $parentTr.children('td').children('button').removeClass('btn-table-active');
+    $(this).addClass('btn-table-active');
+
+
+  })
+});

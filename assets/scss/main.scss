@@ -93,10 +93,22 @@ picture {
   &.btn-orange {
     background-color: $orange;
   }
+  &.btn-transblue {
+    color: $blue;
+    border: 2px solid $blue;
+    background-color: transparent;
+  }
   &:hover {
     box-shadow: $base-box-shadow;
     &.btn-orange {
       background-color: darken($orange, 10%);
+    }
+    &.btn-transblue {
+      text-decoration: none;
+
+      color: #fff;
+      border-color: #fff;
+      background-color: $blue;
     }
   }
 }
@@ -276,6 +288,9 @@ article {
       background-color: lighten($blue, 50%);
     }
   }
+  img {
+    margin-top: 0;
+  }
 }
 .breadcrumbs {
   font-size: 80%;
@@ -325,6 +340,7 @@ article {
     padding-top: 40px;
 
     text-align: center;
+    text-transform: uppercase;
 
     color: #fff;
   }
@@ -467,6 +483,37 @@ article {
         width: 100%;
       }
     }
+  }
+}
+.tab-choise--home {
+  height: 500px;
+  &:before {
+    height: 500px;
+  }
+  .container {
+    height: 100%;
+    .row {
+      position: relative;
+
+      height: 100%;
+    }
+  }
+  .tab-choise--grid {
+    .tab-choise--button {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .btn-transblue {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+
+    width: 160px;
+    margin-left: -80px;
+
+    text-transform: uppercase;
   }
 }
 .double-tarifs {
@@ -617,6 +664,199 @@ article {
           }
         }
       }
+    }
+  }
+}
+.front-block-title {
+  font-size: 24px;
+  font-weight: 600;
+
+  margin-bottom: 35px;
+  padding-top: 35px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $violet;
+  span {
+    padding: 0 5px 5px;
+
+    border-bottom: 1px solid $blue;
+  }
+}
+.front-block-descr {
+  font-size: 13px;
+
+  width: 60%;
+  min-width: 440px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+
+  text-align: center;
+  &.front-block-descr--bdt {
+    position: relative;
+
+    padding-top: 20px;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 100px;
+      height: 1px;
+      margin-left: -50px;
+
+      background-color: $blue;
+
+      @extend .dblock;
+    }
+  }
+}
+.about-company--item {
+  font-size: 13px;
+
+  height: 80px;
+  margin-bottom: 35px;
+
+  text-align: center;
+  h6 {
+    font-size: 36px;
+    font-weight: 900;
+
+    margin-bottom: 10px;
+
+    color: $blue;
+  }
+}
+.our-tech {
+  background-color: $gray;
+}
+.choise-pay--container,
+.our-tech--container {
+  @extend .clearfix;
+  .choise-pay--item,
+  .our-tech--item {
+    position: relative;
+
+    display: inline-block;
+    float: left;
+
+    height: 120px;
+    margin-bottom: 40px;
+
+    text-align: center;
+    img {
+      max-width: 90%;
+
+      @extend .align-center;
+    }
+  }
+}
+.our-advantages--container {
+  .our-advantages--item {
+    position: relative;
+
+    height: 130px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 160px;
+    .our-advantages--image {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 20px;
+
+      display: block;
+
+      width: 120px;
+      img {
+        width: 100%;
+      }
+    }
+    .our-advantages--descr {
+      text-align: justify;
+    }
+  }
+}
+.choise-deftype {
+  padding-bottom: 20px;
+
+  background-color: $gray;
+  .table-calc {
+    margin-bottom: 35px;
+    tr {
+      &:nth-child(odd) {
+        background-color: $gray-medium;
+        .btn-table-calc {
+          background-color: $gray-medium;
+        }
+      }
+      &:nth-child(even) {
+        background-color: $gray;
+        .btn-table-calc {
+          background-color: $gray;
+        }
+      }
+      td {
+        font-size: 16px;
+
+        width: 12%;
+        padding: 0;
+
+        text-align: center;
+
+        border: 0;
+        &:first-child {
+          font-weight: normal;
+
+          width: 28%;
+          padding: 15px;
+
+          text-align: right;
+          text-transform: uppercase;
+
+          color: $blue;
+        }
+      }
+      .btn-table-calc {
+        font-weight: 300;
+
+        width: 100%;
+        height: 60px;
+
+        white-space: normal;
+        word-wrap: break-word;
+
+        color: $gray-dark;
+        &.btn-table-active {
+          color: #fff;
+          background-color: $blue;
+        }
+        &:hover {
+          color: #fff;
+          background-color: darken($action-color, 15%);
+        }
+      }
+    }
+  }
+  .calc-result {
+    width: 520px;
+    margin: 0 auto 20px;
+
+    text-align: center;
+    h5 {
+      font-size: 24px;
+      font-weight: 600;
+
+      margin-bottom: 15px;
+
+      text-transform: uppercase;
+
+      color: $violet;
+    }
+    .btn-transblue {
+      margin: 0 auto;
     }
   }
 }
