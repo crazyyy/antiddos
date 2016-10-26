@@ -420,6 +420,10 @@ article {
     }
   }
   .tab-choise--container {
+    display: none;
+    &.tab-choise--active {
+      display: block;
+    }
     h2 {
       font-size: 24px;
       font-weight: 600;
@@ -513,15 +517,21 @@ article {
       h3 {
         color: $blue !important;
       }
-            path,
+      path,
       circle {
-
-
         stroke: $blue !important;
-
       }
       &:after {
         display: none;
+      }
+      &:hover {
+        h3 {
+          color: #fff !important;
+        }
+        path,
+        circle {
+          stroke: #fff  !important;
+        }
       }
     }
   }

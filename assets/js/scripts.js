@@ -97,6 +97,27 @@ jQuery(document).ready(function($) {
   $elements.height(maxheight);
 }());
 $(document).ready(function() {
+  /** tab choise panel slider */
+  $('.tab-choise--choise .tab-choise--button').on('click', function(e){
+
+    $('.tab-choise--button-active').removeClass('tab-choise--button-active');
+    $(this).addClass('tab-choise--button-active');
+
+    var attr = $(this).attr('data-type');
+    var tt = '.tab-choise--type-' + attr;
+    var $newItemSelector = $(tt);
+
+
+
+    $('.tab-choise--active').removeClass('tab-choise--active');
+
+    $newItemSelector.addClass('tab-choise--active');
+
+
+  })
+
+
+  /** calc for main page */
   $('.table-calc button').on('click', function(e){
 
     var $parentTr = $(this).parent('td').parent('tr');
