@@ -11,7 +11,7 @@
       <th>Hosting 1</th>
       <th>Hosting 2</th>
       <th>Hosting 3</th>
-    </tr>
+    </tr>s
     <tr>
       <td>Дисковое пространство</td>
       <td>1,5 Gb</td>

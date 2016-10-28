@@ -98,7 +98,7 @@ jQuery(document).ready(function($) {
 }());
 $(document).ready(function() {
   /** tab choise panel slider */
-  $('.tab-choise--choise .tab-choise--button').on('click', function(e){
+  $('.tab-choise--choise .tab-choise--button').on('click', function(e) {
 
     $('.tab-choise--button-active').removeClass('tab-choise--button-active');
     $(this).addClass('tab-choise--button-active');
@@ -107,23 +107,44 @@ $(document).ready(function() {
     var tt = '.tab-choise--type-' + attr;
     var $newItemSelector = $(tt);
 
-
-
     $('.tab-choise--active').removeClass('tab-choise--active');
-
     $newItemSelector.addClass('tab-choise--active');
-
 
   })
 
-
   /** calc for main page */
-  $('.table-calc button').on('click', function(e){
+  $('.table-calc button').on('click', function(e) {
 
     var $parentTr = $(this).parent('td').parent('tr');
     $parentTr.children('td').children('button').removeClass('btn-table-active');
     $(this).addClass('btn-table-active');
 
-
   })
+
+
+  $('.change-lang .active').on('click', function(e) {
+    $(this).removeClass('active')
+    $(this).siblings().addClass('active');
+  })
+
+$('.related_posts .relatedthumb').each(function(index, el) {
+  // console.log(el)
+  // HeightAsWidth(el);
+
+  var elementWidth = $(this).width();
+console.log(elementWidth)
+
+  $(this).height(elementWidth);
+
 });
+
+
+});
+
+
+
+
+var HeightAsWidth = function(element) {
+  var elementWidth = $(this).width();
+  $(element).height(elementWidth);
+}

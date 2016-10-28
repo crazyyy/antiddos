@@ -40,7 +40,7 @@
         <div class="col-md-3 header-top--security">
           <a href="#" class="stand-link"><span>Встать под защиту</span></a>
           <ul class="change-lang">
-            <li>EN</li>
+            <li class="active">EN</li>
             <li>RU</li>
           </ul><!-- change-lang -->
         </div><!-- /.col-md-3 header-top--security -->

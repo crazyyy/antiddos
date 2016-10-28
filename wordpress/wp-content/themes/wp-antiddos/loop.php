@@ -16,6 +16,14 @@
 
     <?php wpeExcerpt('wpeExcerpt40'); ?>
 
+    <div class="loop-post-details col-md-12">
+      <span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('d F Y'); ?></span><span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i> <?php the_time('H:i'); ?></span>
+      <span class="views"><i class="fa fa-eye" aria-hidden="true"></i> <?php echo getPostViews(get_the_ID()); ?></span>
+      <span class="category"><i class="fa fa-list" aria-hidden="true"></i> <?php the_category(', '); // Separated by commas ?></span>
+      <span class="tags"><i class="fa fa-tags" aria-hidden="true"></i> <?php the_tags( '', ', ', ''); // Separated by commas with a line break at the end ?></span>
+      <span class="comments"><i class="fa fa-commenting-o" aria-hidden="true"></i> <?php comments_popup_link( __( '0', 'wpeasy' ), __( '1', 'wpeasy' ), __( '%', 'wpeasy' )); ?></span>
+    </div><!-- /.loop-post-details -->
+
   </div><!-- /looper -->
   <?php endwhile; else: ?>
   <div class="col-md-12">

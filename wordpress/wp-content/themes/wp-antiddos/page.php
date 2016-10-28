@@ -11,8 +11,6 @@
 
           <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
 
-          <?php edit_post_link(); ?>
-
         </article>
 
       <?php endwhile; else: ?>
