@@ -1,4 +1,4 @@
-<div class="col-md-12 tab-choise--container tab-choise--type-highload" >
+<div class="col-md-12 col-sm-12 tab-choise--container tab-choise--type-highload" >
   <h2><span>DDoS Защищенные выделенные сервера</span></h2>
   <table>
     <tr>

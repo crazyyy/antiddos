@@ -3,7 +3,7 @@
   <div class="tab-choise tab-choise--home">
     <div class="container">
       <div class="row">
-        <h4 class="col-md-12 tab-choise--title">мы предоставляем 100% защиту от DDOS атак для:</h4>
+        <h4 class="col-md-12 col-sm-12 tab-choise--title">мы предоставляем 100% защиту от DDOS атак для:</h4>
         <?php get_template_part('inc/tab-choise--grid'); ?>
         <a href="#" class="btn btn-transblue">больше услуг</a>
       </div><!-- row -->
@@ -16,19 +16,19 @@
         <h4 class="front-block-title"><span>О компании</span></h4>
         <p class="front-block-descr">Более чем 10-ти летний опыт в защите информации, дает нам возможность не только успешно защищать ваш бизнес, но и прогнозировать векторы будущих атак и принимать превентивные меры.</p>
         <div class="row">
-          <div class="about-company--item col-md-3">
+          <div class="about-company--item col-md-3 col-sm-3">
             <h6><?php $now = time(); $your_date = strtotime("2005-10-15"); $datediff = $now - $your_date; echo floor($datediff / (60 * 60 * 24)); ?> дней</h6>
             <p>непрерывной защиты</p>
           </div><!-- /.about-company--item col-md-3 -->
-          <div class="about-company--item col-md-3">
+          <div class="about-company--item col-md-3 col-sm-3">
             <h6>2000 Gbs</h6>
             <p>емкость внешних каналов</p>
           </div><!-- /.about-company--item col-md-3 -->
-          <div class="about-company--item col-md-3">
+          <div class="about-company--item col-md-3 col-sm-3">
             <h6>10 Млн PPS</h6>
             <p>расчетная мошность DDoS фильтров</p>
           </div><!-- /.about-company--item col-md-3 -->
-          <div class="about-company--item col-md-3">
+          <div class="about-company--item col-md-3 col-sm-3">
             <h6>1500 U</h6>
             <p>вместимость Дата Центра</p>
           </div><!-- /.about-company--item col-md-3 -->
@@ -41,9 +41,9 @@
   <div class="our-tech">
     <div class="container">
       <div class="row">
-        <h4 class="front-block-title col-md-12"><span>наши технологии</span></h4>
+        <h4 class="front-block-title col-md-12 col-sm-12"><span>наши технологии</span></h4>
 
-        <div class="our-tech--container col-md-12">
+        <div class="our-tech--container col-md-12 col-sm-12">
 
           <?php $count = count( get_field('oure_tech') ); $width = 100 / $count;
             if( have_rows('oure_tech') ): while ( have_rows('oure_tech') ) : the_row(); ?>
@@ -64,12 +64,12 @@
     <div class="container">
       <div class="row">
 
-        <h4 class="front-block-title col-md-12"><span>наши приемущества</span></h4>
+        <h4 class="front-block-title col-md-12 col-sm-12"><span>наши приемущества</span></h4>
 
         <div class="row our-advantages--container">
 
           <?php if( have_rows('our-advantages') ): while ( have_rows('our-advantages') ) : the_row(); ?>
-          <div class="our-advantages--item col-md-6">
+          <div class="our-advantages--item col-md-6 col-sm-12">
             <span class="our-advantages--image">
               <?php $image = get_sub_field('image'); if( !empty($image) ): ?>
                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />

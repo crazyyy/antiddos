@@ -1,4 +1,4 @@
-<div class="col-md-12 tab-choise--container tab-choise--type-vps" >
+<div class="col-md-12 col-sm-12 tab-choise--container tab-choise--type-vps" >
   <h2><span>DDoS Защищенные виртуальные сервера VDS</span></h2>
   <div class="tab-choise--description">
     <p>Данная услуга строится на базе DDoS защещенных серверов конфигурации Dedicated 3.</p>

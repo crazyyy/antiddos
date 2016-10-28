@@ -411,9 +411,12 @@ article {
       span {
         display: block;
 
-        width: 165px;
-        height: 165px;
+        width: 90%;
+        max-width: 165px;
         margin: 0 auto;
+        img {
+          width: 100%;
+        }
       }
       path,
       circle {
@@ -691,6 +694,7 @@ article {
       i {
         font-size: 90%;
         font-weight: bold;
+
         margin-right: 2px;
       }
       span {
@@ -709,7 +713,7 @@ article {
         @extend .dblock ;
       }
       a {
-text-decoration: none;
+        text-decoration: none;
       }
     }
     &:nth-child(even) {
@@ -1218,4 +1222,112 @@ footer {
 @import 'fonts/font_fontawesome';
 @import 'fonts/font_proxima';
 @import 'base64';
+
+@media (max-width: 991px) {
+  header {
+    height: auto;
+    margin-bottom: 15px;
+    &:before {
+      height: 60px;
+    }
+    .logo {
+      padding-top: 20px;
+
+      text-align: center;
+      img {
+        margin-bottom: 10px;
+      }
+    }
+    .container {
+      .row {
+        border-bottom: 0;
+      }
+    }
+    .headnav {
+      padding-top: 15px;
+    }
+  }
+  .header-top--phone,
+  .header-top--mail {
+    margin-bottom: 7px;
+
+    text-align: center;
+  }
+  .about-company--item {
+    height: 120px;
+    h6 {
+      font-size: 30px;
+    }
+  }
+.our-advantages--container {
+  .our-advantages--item {
+    .our-advantages--image {
+      /* top: 10px; */
+    }
+  }
+}
+  .choise-deftype {
+    .table-calc {
+      tr {
+        td {
+          font-size: 14px;
+
+          width: 13.5%;
+          button {
+            font-size: 14px;
+          }
+          &:first-child {
+            width: 19%;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding-top: 15px;
+    .footer--adress,
+    .footer--phone,
+    .footer--mail {
+      &:before {
+        left: 15px;
+      }
+    }
+    .footer--social {
+      float: left;
+
+      text-align: left;
+
+      *zoom: 1;
+      a {
+        margin-right: 15px;
+      }
+      &:before {
+        display: table;
+
+        content: '';
+      }
+      &:after {
+        display: table;
+        clear: both;
+
+        content: '';
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import 'import/print';

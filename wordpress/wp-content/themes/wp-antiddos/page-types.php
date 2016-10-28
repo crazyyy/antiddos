@@ -3,7 +3,7 @@
   <div class="tab-choise tab-choise--choise">
     <div class="container">
       <div class="row">
-        <h4 class="col-md-12 tab-choise--title">мне нужна защита для:</h4>
+        <h4 class="col-md-12 col-sm-12 tab-choise--title">мне нужна защита для:</h4>
 
         <?php get_template_part('inc/tab-choise--grid'); ?>
 
@@ -20,9 +20,9 @@
   <div class="double-tarifs">
     <div class="container">
       <div class="row">
-        <h3 class="col-md-12"><span>DDoS защита и поддержка High-Load проектов</span></h3>
+        <h3 class="col-md-12 col-sm-12"><span>DDoS защита и поддержка High-Load проектов</span></h3>
 
-        <div class="col-md-6 double-tarifs--item">
+        <div class="col-md-6 col-sm-12 double-tarifs--item">
           <h4><span>Пакет CLUSTER</span></h4>
           <p>Разработка и техническая поддержка сложных систем балансировки нагрузки между группой серверов.</p>
           <ul>
@@ -53,7 +53,7 @@
           <button class="btn btn-orange">купить</button>
         </div><!-- /.col-md-6 -->
 
-        <div class="col-md-6 double-tarifs--item">
+        <div class="col-md-6 col-sm-12 double-tarifs--item">
           <h4><span>Пакет Full Responsibility </span></h4>
           <p>Разработка и техническая поддержка сложных HighLoad решений для крупных интернет проектов</p>
           <ul>

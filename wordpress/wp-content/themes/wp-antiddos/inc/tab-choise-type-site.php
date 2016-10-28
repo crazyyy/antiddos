@@ -1,4 +1,4 @@
-<div class="col-md-12 tab-choise--container tab-choise--active tab-choise--type-site" >
+<div class="col-md-12 col-sm-12 tab-choise--container tab-choise--active tab-choise--type-site" >
   <h2><span>DDoS защищенный хостинг для интернет сайтов</span></h2>
   <div class="tab-choise--description">
     <p>Данная услуга строится на базе DDoS защещенных серверов конфигурации Dedicated 3.</p>
