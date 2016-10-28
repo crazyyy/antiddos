@@ -110,6 +110,11 @@ $(document).ready(function() {
     $('.tab-choise--active').removeClass('tab-choise--active');
     $newItemSelector.addClass('tab-choise--active');
 
+    $('html, body').animate({
+      scrollTop: $newItemSelector.offset().top
+    }, 2000);
+
+
   })
 
   /** calc for main page */
@@ -127,16 +132,10 @@ $(document).ready(function() {
     $(this).siblings().addClass('active');
   })
 
-$('.related_posts .relatedthumb').each(function(index, el) {
-  // console.log(el)
-  // HeightAsWidth(el);
-
-  var elementWidth = $(this).width();
-console.log(elementWidth)
-
-  $(this).height(elementWidth);
-
-});
+  $('.related_posts .relatedthumb').each(function(index, el) {
+    var elementWidth = $(this).width();
+    $(this).height(elementWidth);
+  });
 
 
 });

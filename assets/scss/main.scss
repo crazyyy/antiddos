@@ -450,7 +450,7 @@ article {
     }
   }
   .tab-choise--container {
-    display: none;
+    /* display: none; */
     &.tab-choise--active {
       display: block;
     }
@@ -1259,13 +1259,6 @@ footer {
       font-size: 30px;
     }
   }
-.our-advantages--container {
-  .our-advantages--item {
-    .our-advantages--image {
-      /* top: 10px; */
-    }
-  }
-}
   .choise-deftype {
     .table-calc {
       tr {
