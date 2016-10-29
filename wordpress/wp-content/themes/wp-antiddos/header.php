@@ -29,15 +29,15 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-md-3 col-sm-6 col-md-offset-3 header-top--phone">
+        <div class="col-md-3 col-sm-6 col-xs-6 col-md-offset-3 header-top--phone">
           звоните: <a href="tel:+380947112310">+38 (094) 711 23 10</a>
         </div><!-- /.col-md-3 col-md-offset-3 header-top--phone -->
 
-        <div class="col-md-3 col-sm-6 header-top--mail">
+        <div class="col-md-3 col-sm-6 col-xs-6 header-top--mail">
           пишите: <a href="mailto:info@antiddos.eu">info@antiddos.eu</a>
         </div><!-- /.col-md-3 header-top--mail -->
 
-        <div class="col-md-3 col-sm-12 header-top--security">
+        <div class="col-md-3 col-sm-12 col-xs-12 header-top--security">
           <a href="#" class="stand-link"><span>Встать под защиту</span></a>
           <ul class="change-lang">
             <li class="active">EN</li>
@@ -45,7 +45,7 @@
           </ul><!-- change-lang -->
         </div><!-- /.col-md-3 header-top--security -->
 
-        <div class="logo col-sm-12 col-md-3">
+        <div class="logo col-sm-12 col-md-3 col-xs-9">
           <?php if ( is_front_page() && is_home() ){ } else { ?>
             <a href="<?php echo home_url(); ?>">
               <?php  } ?>
@@ -55,6 +55,11 @@
             </a>
           <?php } ?>
         </div><!-- /logo -->
+
+        <div class="header--nav-mobile col-xs-3">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div><!-- /.header--nav-mobile -->
 
         <nav class="header--nav col-sm-12 col-md-9" role="navigation">
           <?php wpeHeadNav(); ?>

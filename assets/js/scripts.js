@@ -96,6 +96,10 @@ jQuery(document).ready(function($) {
   });
   $elements.height(maxheight);
 }());
+(function() {
+  var logoHeight = $('header .logo').height();
+  $('.header--nav-mobile').height(logoHeight)
+}());
 $(document).ready(function() {
   /** tab choise panel slider */
   $('.tab-choise--choise .tab-choise--button').on('click', function(e) {
@@ -136,5 +140,24 @@ $(document).ready(function() {
     var elementWidth = $(this).width();
     $(this).height(elementWidth);
   });
+
+  // mobile menu
+  $('.header--nav-mobile .fa-bars').on('click', function(e) {
+    if (!$(this).hasClass('mobiled')) {
+      $(this).addClass('mobiled')
+      $('.header--nav-mobile .fa-times').fadeIn(400);
+      $('.headnav').fadeIn(400);
+    } else {
+      $(this).removeClass('mobiled')
+      $('.header--nav-mobile .fa-times').fadeOut(400);
+      $('.headnav').fadeOut(400);
+    }
+  })
+  $('.header--nav-mobile .fa-times').on('click', function(e) {
+    $('.header--nav-mobile .fa-bars').removeClass('mobiled')
+    $(this).fadeOut(400);
+    $('.headnav').fadeOut(400);
+  })
+
 
 });

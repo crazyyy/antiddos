@@ -13,7 +13,7 @@
           <span class="post-details">
             <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?> |</span> <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
           </span><!-- post-details -->
-
+          <?php echo do_shortcode('[yasr_overall_rating]'); ?>
           <span class="post-tags">
             <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); ?>
           </span>

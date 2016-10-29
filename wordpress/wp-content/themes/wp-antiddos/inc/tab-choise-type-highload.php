@@ -1,4 +1,4 @@
-<div class="col-md-12 col-sm-12 tab-choise--container tab-choise--type-highload" >
+<div class="col-md-12 col-sm-12 col-xs-12 tab-choise--container tab-choise--type-highload" >
   <h2><span>DDoS Защищенные выделенные сервера</span></h2>
   <table>
     <tr>
@@ -107,10 +107,10 @@
     </tr>
     <tr>
       <td></td>
-      <td><button class="btn btn-orange tab-choise--buy" data-num="1">купить</button></td>
-      <td><button class="btn btn-orange tab-choise--buy" data-num="2">купить</button></td>
-      <td><button class="btn btn-orange tab-choise--buy" data-num="3">купить</button></td>
-      <td><button class="btn btn-orange tab-choise--buy" data-num="4">купить</button></td>
+      <td><button class="btn btn-orange tab-choise--buy" data-num="1"><span>купить</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
+      <td><button class="btn btn-orange tab-choise--buy" data-num="2"><span>купить</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
+      <td><button class="btn btn-orange tab-choise--buy" data-num="3"><span>купить</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
+      <td><button class="btn btn-orange tab-choise--buy" data-num="4"><span>купить</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
     </tr>
   </table>
 </div><!-- /.col-md-12 tab-choise--container -->

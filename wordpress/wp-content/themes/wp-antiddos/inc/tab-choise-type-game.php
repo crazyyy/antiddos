@@ -1,5 +1,5 @@
-<div class="col-md-12 col-sm-12 tab-choise--container tab-choise--type-game" >
-  <h2><span>DDoS защищенный хостинг для интернет сайтов</span></h2>
+<div class="col-md-12 col-sm-12 col-xs-12 tab-choise--container tab-choise--type-game" >
+  <h2><span>DDoS Защита игровых проектов</span></h2>
   <div class="tab-choise--description">
     <p>Данная услуга строится на базе DDoS защещенных серверов конфигурации Dedicated 3.</p>
     <p>Тарифные планы отличаются только объемом ресурсов выделенных для сайта. Защита реализована на базе магистральных DDoS фильтров и Web Applications Firewall собственной разработки.</p>
@@ -74,9 +74,9 @@
     </tr>
     <tr>
       <td></td>
-      <td><button class="btn btn-orange tab-choise--buy" data-num="1">купить</button></td>
-      <td><button class="btn btn-orange tab-choise--buy" data-num="2">купить</button></td>
-      <td><button class="btn btn-orange tab-choise--buy" data-num="3">купить</button></td>
+      <td><button class="btn btn-orange tab-choise--buy" data-num="1"><span>купить</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
+      <td><button class="btn btn-orange tab-choise--buy" data-num="2"><span>купить</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
+      <td><button class="btn btn-orange tab-choise--buy" data-num="3"><span>купить</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
     </tr>
   </table>
 </div><!-- /.col-md-12 tab-choise--container -->

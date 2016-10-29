@@ -11,7 +11,7 @@
             <ul class="row">
             <?php while( $my_query->have_posts() ) { $my_query->the_post();?>
 
-              <li class="col-md-6 col-sm-6">
+              <li class="col-md-6 col-sm-6 col-xs-6">
                 <a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>">
                   <span class="relatedthumb">
                     <?php if ( has_post_thumbnail()) :
