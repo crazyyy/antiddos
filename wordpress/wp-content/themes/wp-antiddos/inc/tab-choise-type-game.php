@@ -8,9 +8,9 @@
   <table>
     <tr>
       <th></th>
-      <th>Hosting 1</th>
-      <th>Hosting 2</th>
-      <th>Hosting 3</th>
+      <th>Game 1</th>
+      <th>Game 2</th>
+      <th>Game 3</th>
     </tr>
     <tr>
       <td>Легитимный трафик</td>

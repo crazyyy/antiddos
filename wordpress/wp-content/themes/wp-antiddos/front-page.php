@@ -97,48 +97,48 @@
         <table class="table-calc">
           <tr class="type-type">
             <td>тип проекта :</td>
-            <td><button class="btn btn-blue btn-table-calc btn-table-active">сайт визитка</button></td>
-            <td><button class="btn btn-blue btn-table-calc">магазин</button></td>
-            <td><button class="btn btn-blue btn-table-calc">форум</button></td>
-            <td><button class="btn btn-blue btn-table-calc">HYIP</button></td>
-            <td><button class="btn btn-blue btn-table-calc">игровой сервер</button></td>
-            <td><button class="btn btn-blue btn-table-calc">портал</button></td>
+            <td><button class="btn btn-blue btn-table-calc btn-table-active" data-type="1">сайт визитка</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="2">магазин</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="3">форум</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="4">HYIP</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="5">игровой сервер</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="6">портал</button></td>
           </tr>
           <tr class="type-visit">
             <td>посещений в сутки :</td>
-            <td><button class="btn btn-blue btn-table-calc">до 1000</button></td>
-            <td><button class="btn btn-blue btn-table-calc btn-table-active">до 2000</button></td>
-            <td><button class="btn btn-blue btn-table-calc">до 10000</button></td>
-            <td><button class="btn btn-blue btn-table-calc">до 15000</button></td>
-            <td><button class="btn btn-blue btn-table-calc">до 20000</button></td>
-            <td><button class="btn btn-blue btn-table-calc">более 20000</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="1">до 1000</button></td>
+            <td><button class="btn btn-blue btn-table-calc btn-table-active" data-type="2">до 2000</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="3">до 10000</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="4">до 15000</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="5">до 20000</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="6">более 20000</button></td>
           </tr>
           <tr class="type-traf">
             <td>трафик в месяц :</td>
-            <td><button class="btn btn-blue btn-table-calc">до 10 Гб</button></td>
-            <td><button class="btn btn-blue btn-table-calc">до 50 Гб</button></td>
-            <td><button class="btn btn-blue btn-table-calc btn-table-active">до 100 Гб</button></td>
-            <td><button class="btn btn-blue btn-table-calc">до 500 Гб</button></td>
-            <td><button class="btn btn-blue btn-table-calc">более 500 Гб</button></td>
-            <td><button class="btn btn-blue btn-table-calc">не знаю</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="1">до 10 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="2">до 50 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc btn-table-active" data-type="3">до 100 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="4">до 500 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="5">более 500 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="6">не знаю</button></td>
           </tr>
           <tr class="type-size">
             <td>размер проекта :</td>
-            <td><button class="btn btn-blue btn-table-calc">до 100 Мб</button></td>
-            <td><button class="btn btn-blue btn-table-calc">до 1 Гб</button></td>
-            <td><button class="btn btn-blue btn-transwhite btn-table-calc">до 5 Гб</button></td>
-            <td><button class="btn btn-blue btn-table-calc btn-table-active">до 10 Гб</button></td>
-            <td><button class="btn btn-blue btn-table-calc">до 50 Гб</button></td>
-            <td><button class="btn btn-blue btn-table-calc">более 50 Гб </button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="1">до 100 Мб</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="2">до 1 Гб</button></td>
+            <td><button class="btn btn-blue btn-transwhite btn-table-calc" data-type="3">до 5 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc btn-table-active" data-type="4">до 10 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="5">до 50 Гб</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="6">более 50 Гб </button></td>
           </tr>
           <tr class="type-serv">
             <td>тип хостинга :</td>
-            <td><button class="btn btn-blue btn-table-calc">выделенный сервер</button></td>
-            <td><button class="btn btn-blue btn-table-calc">виртуальный сервер</button></td>
-            <td><button class="btn btn-blue btn-table-calc">хостинг</button></td>
-            <td><button class="btn btn-blue btn-table-calc">удаленная защита</button></td>
-            <td><button class="btn btn-blue btn-table-calc">кластер</button></td>
-            <td><button class="btn btn-blue btn-table-calc btn-table-active">не знаю</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="1">выделенный сервер</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="2">виртуальный сервер</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="3">хостинг</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="4">удаленная защита</button></td>
+            <td><button class="btn btn-blue btn-table-calc btn-table-active" data-type="5">кластер</button></td>
+            <td><button class="btn btn-blue btn-table-calc" data-type="6">не знаю</button></td>
           </tr>
         </table><!-- /.table-calc -->
 

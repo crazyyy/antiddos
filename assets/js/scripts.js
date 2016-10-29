@@ -122,11 +122,71 @@ $(document).ready(function() {
   })
 
   /** calc for main page */
+  // default vars
+  var typeType = 1;
+  var typeVisit = 2;
+  var typeTraf = 3;
+  var typeSize = 4;
+  var typeServ = 5;
   $('.table-calc button').on('click', function(e) {
-
+    // remove active class and ad to this button
     var $parentTr = $(this).parent('td').parent('tr');
     $parentTr.children('td').children('button').removeClass('btn-table-active');
     $(this).addClass('btn-table-active');
+    var dataType = $(this).attr('data-type')
+
+    var choosedPackage = 'VPS2';
+
+    var package = {
+
+    }
+
+    if ( $parentTr.hasClass('type-type') ) {
+      typeType = dataType
+    } else if ( $parentTr.hasClass('type-visit') ) {
+      typeVisit = dataType
+    } else if ( $parentTr.hasClass('type-traf') ) {
+      typeTraf = dataType
+    } else if ( $parentTr.hasClass('type-size') ) {
+      typeSize = dataType
+    } else if ( $parentTr.hasClass('type-serv') ) {
+      typeServ = dataType
+    }
+
+    if ( typeType == 1 ) {
+      // shared
+      if ( ( typeVisit == 1 ) && ( typeServ == 3 ) || ( typeVisit == 2 ) && ( typeServ == 3 ) ) {
+        choosedPackage = 'Hosting1';
+      } else if ( ( typeVisit == 3 ) && ( typeServ == 3 ) || ( typeVisit == 4 ) && ( typeServ == 3 ) ) {
+        choosedPackage = 'Hosting2';
+      } else if ( ( typeVisit == 5 ) && ( typeServ == 3 ) || ( typeVisit == 6 ) && ( typeServ == 3 ) ) {
+        choosedPackage = 'Hosting3';
+      }
+      // vps
+      else if ( ( typeVisit == 1 ) && ( typeServ == 2 ) || ( typeVisit == 2 ) && ( typeServ == 2 ) ) {
+        choosedPackage = 'VPS1';
+      }
+      // dedic
+      else if ( ( typeVisit == 1 ) && ( typeServ == 1 ) || ( typeVisit == 2 ) && ( typeServ == 1 ) ) {
+        choosedPackage = 'Dedicated1';
+      }
+    }
+
+
+    console.log(typeType + ' ' + typeVisit + ' ' + typeTraf + ' ' + typeSize + ' ' + typeServ + ' ' + dataType)
+    console.log(choosedPackage)
+
+    $('.calc-result h5 span').fadeOut(500);
+
+    $('.calc-result h5 span').html(choosedPackage)
+
+    $('.calc-result h5 span').fadeIn(500);
+
+
+    // first-line
+
+
+
 
   })
 

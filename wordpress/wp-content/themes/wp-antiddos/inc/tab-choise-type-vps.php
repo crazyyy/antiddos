@@ -97,4 +97,9 @@
       <td><button class="btn btn-orange tab-choise--buy" data-num="3"><span>купить</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
     </tr>
   </table>
+  <div class="tab-choise--description">
+    <p>Данная услуга строится на базе DDoS защещенных серверов конфигурации Dedicated 3.</p>
+    <p>Тарифные планы отличаются только объемом ресурсов выделенных для сайта. Защита реализована на базе магистральных DDoS фильтров и Web Applications Firewall собственной разработки.</p>
+    <p>Если вы постоянно подвергаетесь ддос атакам, но ваш проект малобюджетный для покупки сервера с защитой от DDoS, хотсинг для вас наилучший выбор.</p>
+  </div><!-- /.tab-choise--description -->
 </div><!-- /.col-md-12 tab-choise--container -->

@@ -229,6 +229,7 @@ header {
 
     display: none;
 
+    min-height: 100px;
     padding-top: 20px;
     .fa-bars {
       font-size: 60px;
@@ -597,6 +598,7 @@ article {
       font-size: 16px;
 
       width: 100%;
+      margin-bottom: 10px;
       .fa-minus-circle {
         color: $violet;
       }
@@ -633,7 +635,7 @@ article {
       }
       button {
         width: 100%;
-        i{
+        i {
           display: none;
         }
       }
@@ -658,9 +660,15 @@ article {
       h3 {
         color: $blue !important;
       }
-      path,
-      circle {
-        stroke: $blue !important;
+      &.tab-choise--button-site {
+        span {
+          background-image: url(../img/svg/ico-site.png) !important;
+        }
+        &:hover {
+          span {
+            background-image: url(../img/svg/ico-site-h.png) !important;
+          }
+        }
       }
       &:after {
         display: none;
@@ -1066,6 +1074,9 @@ article {
       text-transform: uppercase;
 
       color: $violet;
+      span {
+        transition: all .5s;
+      }
     }
     .btn-transblue {
       margin: 0 auto;
@@ -1575,6 +1586,14 @@ footer {
 }
 
 @media (max-width: 540px) {
+  header {
+    .header-top--phone a {
+      display: block;
+    }
+    &:before {
+      height: 75px;
+    }
+  }
   .tab-choise {
     /* height: 440px; */
     height: auto;
@@ -1638,14 +1657,13 @@ footer {
             font-size: 80%;
 
             width: 20%;
-
             button {
-              padding-left: 0;
               padding-right: 0;
+              padding-left: 0;
               i {
                 display: inline;
               }
-              span{
+              span {
                 display: none;
               }
             }
@@ -1654,9 +1672,22 @@ footer {
       }
     }
   }
+  .front-block-descr {
+    min-width: 320px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .about-company--item {
+    height: 105px;
+  }
   .our-advantages--container {
     .our-advantages--item {
       height: auto;
+    }
+  }
+  .double-tarifs {
+    .double-tarifs--item {
+      height: auto !important;
     }
   }
   .choise-deftype {
@@ -1671,13 +1702,17 @@ footer {
         td {
           width: 14%;
           &:first-child {
-            font-size: 60%;
+            font-size: 9px;
 
             width: 16%;
+            padding-right: 0;
+            padding-left: 0;
+
+            text-align: left;
           }
         }
         .btn-table-calc {
-          font-size: 80%;
+          font-size: 9px;
 
           padding-right: 0;
           padding-left: 0;
