@@ -1576,7 +1576,8 @@ footer {
 
 @media (max-width: 540px) {
   .tab-choise {
-    height: 440px;
+    /* height: 440px; */
+    height: auto;
     &:before {
       height: 440px;
     }

@@ -17,7 +17,9 @@
           <span class="post-tags">
             <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); ?>
           </span>
-
+          <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+          <script src="//yastatic.net/share2/share.js"></script>
+          <div class="ya-share2" data-services="vkontakte,facebook,gplus,twitter,reddit,linkedin"></div>
           <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
 
           <?php get_template_part('inc/related-posts'); ?>
