@@ -137,13 +137,4 @@ $(document).ready(function() {
     $(this).height(elementWidth);
   });
 
-
 });
-
-
-
-
-var HeightAsWidth = function(element) {
-  var elementWidth = $(this).width();
-  $(element).height(elementWidth);
-}
