@@ -10,9 +10,9 @@
       <div class="row">
         <?php get_template_part('inc/tab-choise-type-site'); ?>
         <?php get_template_part('inc/tab-choise-type-vps'); ?>
-        <?php get_template_part('inc/tab-choise-type-remote'); ?>
+        <?php get_template_part('inc/tab-choise-type-vds'); ?>
         <?php get_template_part('inc/tab-choise-type-game'); ?>
-        <?php get_template_part('inc/tab-choise-type-highload'); ?>
+        <?php get_template_part('inc/tab-choise-type-remote'); ?>
       </div><!-- row -->
     </div><!-- container -->
   </div><!-- /.tab-choise -->
@@ -20,8 +20,12 @@
   <div class="double-tarifs">
     <div class="container">
       <div class="row">
-        <h3 class="col-md-12 col-sm-12 col-xs-12"><span>DDoS защита и поддержка High-Load проектов</span></h3>
-
+        <h3 class="col-md-12 col-sm-12 col-xs-12 tab-choise--type-highload"><span>DDoS защита и поддержка High-Load проектов</span></h3>
+        <div class="col-md-12 col-sm-12 col-xs-12 tab-choise--description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime natus, nam dolore est vitae consequatur. Fuga officia quasi sed maxime voluptatibus explicabo. Alias doloremque error dicta eius, delectus, beatae officia.</p>
+          <p>Aspernatur maiores accusantium exercitationem id nesciunt impedit magni architecto autem harum natus consequuntur temporibus vitae beatae quidem explicabo odio, soluta aperiam, obcaecati voluptate. Omnis eligendi aperiam ipsa, aspernatur enim repudiandae!</p>
+          <p>Labore maiores odit ipsa qui aliquam eum, impedit dicta obcaecati eos omnis fugiat itaque nam ratione id, soluta animi quia minus consectetur! Consectetur sequi accusamus repellat quas, rerum cupiditate tempore.</p>
+        </div><!-- /.tab-choise--description -->
         <div class="col-md-6 col-sm-12 col-xs-12 double-tarifs--item">
           <h4><span>Пакет CLUSTER</span></h4>
           <p>Разработка и техническая поддержка сложных систем балансировки нагрузки между группой серверов.</p>

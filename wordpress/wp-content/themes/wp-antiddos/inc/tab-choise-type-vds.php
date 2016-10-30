@@ -1,5 +1,10 @@
-<div class="col-md-12 col-sm-12 col-xs-12 tab-choise--container tab-choise--type-highload" >
+<div class="col-md-12 col-sm-12 col-xs-12 tab-choise--container" >
   <h2><span>DDoS Защищенные выделенные сервера</span></h2>
+  <div class="tab-choise--description">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime natus, nam dolore est vitae consequatur. Fuga officia quasi sed maxime voluptatibus explicabo. Alias doloremque error dicta eius, delectus, beatae officia.</p>
+    <p>Aspernatur maiores accusantium exercitationem id nesciunt impedit magni architecto autem harum natus consequuntur temporibus vitae beatae quidem explicabo odio, soluta aperiam, obcaecati voluptate. Omnis eligendi aperiam ipsa, aspernatur enim repudiandae!</p>
+    <p>Labore maiores odit ipsa qui aliquam eum, impedit dicta obcaecati eos omnis fugiat itaque nam ratione id, soluta animi quia minus consectetur! Consectetur sequi accusamus repellat quas, rerum cupiditate tempore.</p>
+  </div><!-- /.tab-choise--description -->
   <table>
     <tr>
       <th></th>

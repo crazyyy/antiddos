@@ -701,7 +701,7 @@ article {
     font-size: 24px;
     font-weight: 600;
 
-    margin-bottom: 55px;
+    margin-bottom: 25px;
 
     text-align: center;
     text-transform: uppercase;
@@ -710,6 +710,12 @@ article {
     span {
       border-bottom: 1px solid $blue;
     }
+  }
+  .tab-choise--description {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    margin-bottom: 20px;
   }
   .double-tarifs--item {
     font-size: 13px;
