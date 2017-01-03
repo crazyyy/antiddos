@@ -1,9 +1,8 @@
 <?php
-define('DB_NAME', 'antiddos');
-define('DB_USER', 'antiddos');
-define('DB_PASSWORD', 'antiddos');
-
-define('DB_HOST', 'localhost');
+define('DB_NAME', 'p284179_saitde1');
+define('DB_USER', 'p284179_saitde1');
+define('DB_PASSWORD', 'XpFr2vq6E8');
+define('DB_HOST', 'p284179.mysql.ihc.ru');
 
 define('DISABLE_WP_CRON', true);
 define('FS_METHOD', 'direct');
